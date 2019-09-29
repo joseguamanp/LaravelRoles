@@ -16,6 +16,7 @@
 
                     You are logged in!
                 </div>
+                <a href="{{url('data')}}">redireccionamiento solo administrador</a>
             </div>
         </div>
     </div>
