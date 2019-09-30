@@ -2,17 +2,13 @@
 
 @section('content')
 <div class="container">
-    <div class="row">
-        <div class="col-md-6">
-          <img class="img-responsive" src="{{url('')}}/img/electrodomesticos.jpg" alt="">
-        </div>
-        <div class="col-md-6">
+    <div class="row justify-content-center">
+        <div class="col-md-5">
             <div class="card" style="background-color: #5bd40026;">
                 <div class="card-header" style="text-align:center;">{{ __('Login') }}</div>
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
-
                         <div class="row">
                                 <input placeholder="Email" id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
                                 @error('email')
